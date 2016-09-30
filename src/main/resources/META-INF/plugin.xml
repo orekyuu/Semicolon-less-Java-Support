@@ -1,0 +1,32 @@
+<idea-plugin version="2">
+    <id>net.orekyuu.semicolonless</id>
+    <name>Semicolon-less Java Support</name>
+    <version>1.0.0</version>
+    <vendor email="orekyuu@gmail.com" url="http://orekyuu.net">orekyuu</vendor>
+
+    <description><![CDATA[
+      Semicolon-less Java Support.
+    ]]></description>
+
+    <change-notes><![CDATA[
+      2016/9/30: 1.0.0
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="141.0"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <localInspection
+                displayName="Unused semicolon"
+                groupName="Semicolon-less Java"
+                language="JAVA"
+                enabledByDefault="false"
+                level="ERROR"
+                implementationClass="net.orekyuu.semicolonless.inspection.SemicolonUsedInspection"
+                />
+    </extensions>
+
+    <actions>
+    </actions>
+
+</idea-plugin>

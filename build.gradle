@@ -1,0 +1,39 @@
+group 'net.orekyuu'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url 'http://dl.bintray.com/jetbrains/intellij-plugin-service'
+        }
+
+    }
+    dependencies {
+        classpath "gradle.plugin.org.jetbrains:gradle-intellij-plugin:0.1.10"
+    }
+}
+
+apply plugin: 'org.jetbrains.intellij'
+
+
+intellij {
+    version 'IC-2016.1'
+    pluginName 'SemicolonLessJava Support'
+}
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
