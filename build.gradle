@@ -23,11 +23,13 @@ apply plugin: 'org.jetbrains.intellij'
 
 intellij {
     version 'IC-2016.1'
-    pluginName 'SemicolonLessJava Support'
+    pluginName = "Semicolon-less Java Support"
 }
 
 sourceCompatibility = 1.6
 targetCompatibility = 1.6
+
+version = "1.0.0"
 
 repositories {
     mavenCentral()
