@@ -1,7 +1,7 @@
-## Semicolon-less Java Support
+# Semicolon-less Java Support
 
 It is an error to use a semicolon.
 
-# Screenshot
+## Screenshot
 ![img](error.png)
 ![img](settings.png)
