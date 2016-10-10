@@ -29,7 +29,7 @@ intellij {
 sourceCompatibility = 1.6
 targetCompatibility = 1.6
 
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
